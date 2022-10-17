@@ -6,8 +6,10 @@
 }
 
 .hero-opacity{
-    /* position: absolute; */
+    position: absolute;
     background-color: rgba(0, 0, 0, 0.71);
+    height: 100%;
+    width: 100%;
     z-index: 5;
 }
 
@@ -28,7 +30,7 @@
     width: 65rem;
     background-color: rgba(0, 0, 0, 0.644);
     border-radius: 5px;
-    padding: 0 1rem;
+    padding: 0 2rem;
     display: flex;
     flex-direction: column;
     /* justify-content: center; */

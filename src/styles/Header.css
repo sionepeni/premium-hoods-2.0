@@ -44,10 +44,10 @@
     transition-duration: .8s;
 }
 
-/* .header-selected{
+.header-btns-selected{
     justify-content: center;
-    height: 2rem;
-    width: 5.5rem;
+    height: 2.5rem;
+    width: 6rem;
     display: flex;
     align-items: center;
     list-style: none;
@@ -59,8 +59,8 @@
     border: 1px solid red;
     cursor: pointer;
     background-color: rgb(104, 104, 104);
-} */
+}
 
-/* a:link{
+a:link{
     text-decoration: none!important;
-} */
+}

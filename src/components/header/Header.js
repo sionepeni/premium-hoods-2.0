@@ -3,9 +3,9 @@ import "../../styles/Header.css"
 import { useState } from "react"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { BsXLg } from "react-icons/bs"
-// import { Link } from "react-router-dom"
+import { Link } from "react-router-dom"
 
-export default function Header() {
+export default function Header({ pageSelected }) {
     const headerOptions = [
         {
             option: "Home",
@@ -37,12 +37,19 @@ export default function Header() {
                 </span>
                 <div className="header-btn-container">
                     {headerOptions.map((i) => (
-                        // <Link to={i.link} key={i.link}>
-                        // {" "}
-                        <div className="header-btns" key={i.option}>
-                            {i.option}
-                        </div>
-                        // {/* </Link> */}
+                        <Link to={i.link} key={i.link}>
+                            {" "}
+                            <div
+                                className={
+                                    pageSelected === i.option
+                                        ? "header-btns-selected"
+                                        : "header-btns"
+                                }
+                                key={i.option}
+                            >
+                                {i.option}
+                            </div>{" "}
+                        </Link>
                     ))}
                 </div>
             </div>

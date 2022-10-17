@@ -1,4 +1,5 @@
 import "../../styles/AboutServices.css"
+import { Link } from "react-router-dom"
 
 function Card({ item: { heading, text } }) {
     return (
@@ -7,7 +8,9 @@ function Card({ item: { heading, text } }) {
                 <h1 className="asc-h1">{heading}</h1>
                 <div className="about-services-divider"></div>
                 <p className="asc-p">{text}</p>
-                <button className="about-services-button">More info</button>
+                <Link to="/services">
+                    <button className="about-services-button">More info</button>
+                </Link>
             </div>
         </>
     )

@@ -13,18 +13,6 @@ import { useState } from "react"
 function Card({ item: { option, text, pictures } }) {
     const [currentImage, setCurrentImage] = useState(1)
 
-    const nextImage = () => {
-        currentImage !== Object.keys(pictures).length
-            ? setCurrentImage(currentImage + 1)
-            : setCurrentImage(1)
-    }
-
-    const prevImage = () => {
-        currentImage !== 1
-            ? setCurrentImage(currentImage - 1)
-            : setCurrentImage(Object.keys(pictures).length)
-    }
-
     return (
         <>
             <div className="card">
@@ -49,7 +37,7 @@ function Card({ item: { option, text, pictures } }) {
                                 ? "card-selected"
                                 : "card-not-selected"
                         }
-                        onClick={prevImage}
+                        onClick={() => setCurrentImage(2)}
                     >
                         Before &nbsp;
                     </h2>
@@ -61,7 +49,7 @@ function Card({ item: { option, text, pictures } }) {
                                 ? "card-selected"
                                 : "card-not-selected"
                         }
-                        onClick={nextImage}
+                        onClick={() => setCurrentImage(1)}
                     >
                         After
                     </h2>
@@ -71,7 +59,7 @@ function Card({ item: { option, text, pictures } }) {
     )
 }
 
-function ServiceContent({ selectedOption, serviceSelected }) {
+function ServiceContent() {
     const serviceContentData = [
         {
             option: "Kitchen Extraction Cleaning",
@@ -106,7 +94,8 @@ function ServiceContent({ selectedOption, serviceSelected }) {
     return (
         <>
             <div className="service-content">
-                <div className="service-conetnt-body">
+                <h1 className="service-content-h1">Services</h1>
+                <div className="service-content-body">
                     {serviceContentData.map((item) => (
                         <Card item={item} key={item.option}></Card>
                     ))}

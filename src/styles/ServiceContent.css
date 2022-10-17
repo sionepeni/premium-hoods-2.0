@@ -2,7 +2,7 @@
     background-image: linear-gradient(black, grey, red);
     color: white;
     text-align: center;
-    margin: .5rem 1.5rem;
+    /* margin: .5rem 1.5rem; */
     padding: 2rem 4rem;
     width: fit-content;
     border: 2px solid red;
@@ -41,21 +41,52 @@
 }
 
 .card-selected{
-    border: 2px solid white;
+    border: 2px solid black;
     padding: 1rem;
-    background-color: rgb(68, 68, 68);
+    color: red;
+    background-color: white;
     width: 50%;
-    border-radius: 5px;
+    border-radius: 5px 0 0 5px;
+    font-size: 26px;
+    transition: .5s;
+    opacity: 60%;
 }
-.card-not-selected{
-    width: 50%;
-    padding: 1rem;
+
+.card-selected:hover{
+    opacity: 100%;
+    transition-duration: .5s;
     cursor: pointer;
 }
 
-.service-conetnt-body{
+.card-not-selected{
+    width: 50%;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    font-size: 26px;
+    border: 2px solid white;
+    border-radius: 0 5px 5px 0;
+    transition: .5s;
+}
+
+.service-content-body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: fit-content;
+    gap: 3.5rem;
+}
+
+.service-content{
     background-color: rgba(0, 0, 0, 0.863);
+    min-height: fit-content;
+    padding: .5rem 0 3rem 0;
+}
+
+.service-content-h1{
+    font-size: 42px;
+    text-decoration: underline;
+    color: white;
+    text-align: center;
+    padding-bottom: .5rem;
 }

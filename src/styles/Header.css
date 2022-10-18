@@ -101,8 +101,10 @@ a:link{
         border-radius: 0px;
         font-size: 22px;
         margin: 0;
+        border: none;
+        padding: 2rem 0;
     }
-
+    
     .header-btns-selected{
         height: 3rem;
         width: 100vw;
@@ -110,9 +112,10 @@ a:link{
         border-radius: 0px;
         font-size: 22px;
         margin: 0;
-        border: 1px solid red;
+        border: none;
         cursor: pointer;
         background-color: rgb(104, 104, 104);
+        padding: 2rem 0;
     }
 
     a:link{

@@ -124,4 +124,7 @@
     .service-content-h1{
         font-size: 36px;
     }
+    .service-content{
+    padding-bottom: 0;
+    }
 }

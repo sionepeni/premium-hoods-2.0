@@ -40,7 +40,7 @@
     margin: auto;
 }
 
-.card-selected{
+.card-not-selected{
     border: 2px solid black;
     padding: 1rem;
     color: red;
@@ -50,15 +50,15 @@
     font-size: 26px;
     transition: .5s;
     opacity: 60%;
+    cursor: pointer;
 }
 
 .card-selected:hover{
     opacity: 100%;
     transition-duration: .5s;
-    cursor: pointer;
 }
 
-.card-not-selected{
+.card-selected{
     width: 50%;
     padding: 1rem;
     background-color: black;

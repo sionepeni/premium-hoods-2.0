@@ -37,7 +37,7 @@ function Card({ item: { option, text, pictures } }) {
                                 ? "card-selected"
                                 : "card-not-selected"
                         }
-                        onClick={() => setCurrentImage(2)}
+                        onClick={() => setCurrentImage(1)}
                     >
                         Before &nbsp;
                     </h2>
@@ -49,7 +49,7 @@ function Card({ item: { option, text, pictures } }) {
                                 ? "card-selected"
                                 : "card-not-selected"
                         }
-                        onClick={() => setCurrentImage(1)}
+                        onClick={() => setCurrentImage(2)}
                     >
                         After
                     </h2>

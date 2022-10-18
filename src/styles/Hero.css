@@ -69,7 +69,7 @@
 @media only screen and (max-width : 425px){
     .hero{
         width: 100vw;
-        height: 200vh;
+        height: fit-content;
     }
 
     .hero-img{
@@ -77,13 +77,12 @@
     }
 
     .hero-text{
+        position: static;
         top: 2rem;
         left: 0;
         transform: translate(0);
         border: none;
         border-radius: 0;
-        border-top: 3px solid white;
-        border-bottom: 3px solid white;
         width: 100vw;
     }
 

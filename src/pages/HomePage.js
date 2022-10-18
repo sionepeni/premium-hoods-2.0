@@ -11,7 +11,7 @@ export default function HomePage() {
             <Header pageSelected={"Home"} />
             <Hero />
             <AboutServices />
-            {/* <Quote /> */}
+            <Quote />
             {/* <Footer /> */}
         </>
     )

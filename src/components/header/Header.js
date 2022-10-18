@@ -6,6 +6,8 @@ import { BsXLg } from "react-icons/bs"
 import { Link } from "react-router-dom"
 
 export default function Header({ pageSelected }) {
+    const [mobileView, setMobileView] = useState(false)
+
     const headerOptions = [
         {
             option: "Home",
@@ -35,7 +37,23 @@ export default function Header({ pageSelected }) {
                         alt="premium hoods logo"
                     ></img>
                 </span>
-                <div className="header-btn-container">
+                <span
+                    className="mobile-menu-btn"
+                    onClick={() => setMobileView(!mobileView)}
+                >
+                    {mobileView ? (
+                        <BsXLg color="white" size={40} />
+                    ) : (
+                        <GiHamburgerMenu color="white" size={40} />
+                    )}
+                </span>
+                <div
+                    className={
+                        mobileView
+                            ? "header-btn-container"
+                            : "header-btn-container hidden"
+                    }
+                >
                     {headerOptions.map((i) => (
                         <Link to={i.link} key={i.link}>
                             {" "}

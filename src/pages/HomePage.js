@@ -9,6 +9,10 @@ export default function HomePage() {
     return (
         <>
             <Header pageSelected={"Home"} />
+            <Hero />
+            {/* <AboutServices /> */}
+            {/* <Quote /> */}
+            {/* <Footer /> */}
         </>
     )
 }

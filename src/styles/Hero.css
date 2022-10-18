@@ -65,3 +65,43 @@
     color: rgb(203, 10, 10);
     font-size: 20px;
 }
+
+@media only screen and (max-width : 425px){
+    .hero{
+        width: 100vw;
+        height: 300vh;
+    }
+
+    .hero-img{
+        display: none;
+    }
+
+    .hero-text{
+        top: 2rem;
+        left: 0;
+        transform: translate(0);
+        border: none;
+        border-radius: 0;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        width: 100vw;
+    }
+
+    .hero-text > h1{
+        font-size: 36px;
+    }
+
+    .hero-text > p{
+        font-size: 22px;
+        line-height: 2rem;
+    }
+
+    .hero-text > ul{
+        font-size: 22px;
+        line-height: 2rem;
+    }
+
+    .hero-list-text{
+        font-size: 22px;
+    }
+}

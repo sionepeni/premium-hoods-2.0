@@ -17,6 +17,10 @@ export default function Header({ pageSelected }) {
             option: "Services",
             link: "/services",
         },
+        {
+            option: "Get a Quote",
+            link: "/quote",
+        },
         // {
         //     option: "About Us",
         //     link: "/aboutus",

@@ -105,6 +105,7 @@
     }
     .asc-h1{
     font-size: 32px;
+    height: fit-content;
     }
     .asc-p{
     font-size: 22px;

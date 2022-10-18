@@ -175,6 +175,7 @@
 
     .success-modal{
         height: fit-content;
+        width: 80vw;
     }
 
     .success-modal-x{

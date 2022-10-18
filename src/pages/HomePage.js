@@ -1,4 +1,5 @@
 import React from "react"
+import BackToTop from "../components/back-to-top/BackToTop"
 import Footer from "../components/footer/Footer"
 import Header from "../components/header/Header"
 import AboutServices from "../components/home/AboutServices"
@@ -10,6 +11,7 @@ export default function HomePage() {
         <>
             <Header pageSelected={"Home"} />
             <Hero />
+            <BackToTop />
             <AboutServices />
             <Quote />
             <Footer />

@@ -2,6 +2,7 @@ import "./App.css"
 import HomePage from "./pages/HomePage"
 import ServicesPage from "./pages/ServicesPage"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import QuotePage from "./pages/QuotePage"
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                             path="/services"
                             element={<ServicesPage />}
                         ></Route>
+                        <Route path="/quote" element={<QuotePage />}></Route>
                     </Routes>
                 </div>
             </Router>

@@ -85,6 +85,7 @@ a:link{
     }
 
     .header-logo{
+        padding-left: 2rem;
         height: 90px;
         width: 320px;
     }

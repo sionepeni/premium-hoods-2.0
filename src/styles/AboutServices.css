@@ -82,3 +82,31 @@
     color: white;
     transition: .5s;
 }
+
+@media only screen and (max-width : 425px){
+    .about-services-main{
+        width: 100vw;
+    }
+
+    
+    .about-services-content{
+        display: flex;
+        gap: 3.5rem;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    
+    .about-services-card{
+        width: 85vw;
+        height: 30em;
+    }
+    .about-services-h1{
+    font-size: 36px;
+    }
+    .asc-h1{
+    font-size: 32px;
+    }
+    .asc-p{
+    font-size: 22px;
+    }
+}

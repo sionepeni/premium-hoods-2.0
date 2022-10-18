@@ -10,7 +10,7 @@ export default function HomePage() {
         <>
             <Header pageSelected={"Home"} />
             <Hero />
-            {/* <AboutServices /> */}
+            <AboutServices />
             {/* <Quote /> */}
             {/* <Footer /> */}
         </>

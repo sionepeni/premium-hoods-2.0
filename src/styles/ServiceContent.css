@@ -90,3 +90,38 @@
     text-align: center;
     padding-bottom: .5rem;
 }
+
+@media only screen and (max-width : 425px){
+    .card {
+        width: 100vw;
+        height: fit-content;
+        border: none;
+        border-top: 2px solid red;
+        border-radius: 0px;
+        padding: 1rem 0;
+    }
+
+    .card-text{
+        font-size: 22px;
+        width: 100vw;
+        height: fit-content;
+        padding: 0 1.5rem;
+    }
+
+    .card-heading{
+        padding: 0 1.5rem;
+    }
+
+    .card-img1{
+        border: none;
+        border-top: 3px solid white;
+        border-bottom: 3px solid white;
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0px;
+    }
+
+    .service-content-h1{
+        font-size: 36px;
+    }
+}

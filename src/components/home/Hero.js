@@ -7,7 +7,7 @@ export default function Hero() {
             <div className="hero">
                 <span className="hero-opacity"></span>
                 <img className="hero-img" src={hero} alt="premium hoods hero" />
-                <div className="hero-text">
+                <div className="hero-text remove-scroll-bar">
                     <h1>Kitchen Extraction Cleaning for Commercial Kitchens</h1>
                     <p>
                         Commercial Kitchen Hoods, Canopies and extract systems

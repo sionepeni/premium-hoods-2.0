@@ -34,6 +34,11 @@
     display: flex;
     flex-direction: column;
     /* justify-content: center; */
+    overflow-y: scroll;
+}
+
+.remove-scroll-bar::-webkit-scrollbar {
+    display: none;
 }
 
 .hero-text > h1{

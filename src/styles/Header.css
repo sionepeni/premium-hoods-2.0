@@ -145,3 +145,20 @@ a:link{
         display: none;
     }
 }
+
+@media only screen and (max-width : 412px){
+    .header{
+        padding: 1rem 0rem;
+    }
+    .full-bleed-header{
+    box-shadow: none;
+    clip-path: none;
+}
+}
+@media only screen and (max-width : 375px){
+    .full-bleed-header{
+    box-shadow: none;
+    clip-path: none;
+}
+
+}

@@ -38,7 +38,7 @@
 
 .hero-text > h1{
     color: white;
-    font-size: 43px;
+    font-size: 44px;
     text-decoration: underline;
     text-align: center;
 }
@@ -66,7 +66,7 @@
     font-size: 20px;
 }
 
-@media only screen and (max-width : 2560px){
+@media only screen and (max-width : 2557px){
 
     .hero-text > h1{
         font-size: 34px;

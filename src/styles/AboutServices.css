@@ -171,3 +171,24 @@
     font-size: 22px;
     }
 }
+
+@media only screen and (max-width : 412px){
+    .about-services-main{
+        width: 100vw;
+    }
+
+    .about-services-card{
+        width: 90vw;
+        height: 30em;
+    }
+    .about-services-h1{
+    font-size: 36px;
+    }
+    .asc-h1{
+    font-size: 32px;
+    height: fit-content;
+    }
+    .asc-p{
+    font-size: 22px;
+    }
+}

@@ -236,3 +236,56 @@
         font-size: 26px;
     }
 }
+
+@media only screen and (max-width : 412px){
+    .quote{
+        width: 100vw;
+    }
+
+    .quote-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1rem;
+        border-radius: 5px;
+    }
+    .full-bleed-quote{
+        box-shadow: none;
+        clip-path: none;
+    }
+
+    .general-form{
+        width: 100%;
+        font-size: 22px;
+    }
+
+    .service{
+        font-size: 22px;
+    }
+
+    .comment{
+        font-size: 22px;
+    }
+
+    .service-list{
+        padding: .5rem 0;
+    }
+
+    .quote-submit{
+        width:90%;
+    }
+
+    .success-modal{
+        height: fit-content;
+        width: 80vw;
+    }
+
+    .success-modal-x{
+    padding: 1rem 1rem 0 0;
+    }
+
+    .success-modal-text{
+        line-height: 1.8rem;
+        font-size: 26px;
+    }
+}

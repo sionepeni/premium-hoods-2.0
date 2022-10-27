@@ -25,6 +25,7 @@ export default function Quote() {
             throw err
         })
     }
+    console.log(`hello`)
 
     const handleChange = (e) => {
         setToSend({ ...toSend, [e.target.name]: e.target.value })

@@ -83,6 +83,66 @@
     transition: .5s;
 }
 
+@media only screen and (max-width : 1440px){
+        .about-services-main{
+        width: 100vw;
+    }
+
+    
+    .about-services-content{
+        display: flex;
+        gap: 3.5rem;
+        flex-wrap: wrap;
+        width: 65vw;
+    }
+    
+    .about-services-card{
+        width: 30vw;
+        height: 30em;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width : 1024px){
+    .about-services-main{
+        width: 100vw;
+    }
+    .about-services-content{
+        display: flex;
+        gap: 3.5rem;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    .about-services-card{
+        width: 37vw;
+        height: 30em;
+        margin: 0 auto;
+    }
+    .about-services-h1{
+    font-size: 38px;
+    }
+    .asc-h1{
+    font-size: 28px;
+    height: fit-content;
+    }
+    .asc-p{
+    font-size: 20px;
+    }
+}
+
+@media only screen and (max-width : 768px){
+        .about-services-content{
+        gap: 3.5rem;
+        width: 90vw;
+    }
+    .about-services-card{
+        width: 40vw;
+        height: 26rem;
+        padding-bottom: 6rem;
+        margin: 0 auto;
+    }
+}
+
 @media only screen and (max-width : 425px){
     .about-services-main{
         width: 100vw;

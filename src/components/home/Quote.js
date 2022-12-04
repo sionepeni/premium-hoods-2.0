@@ -24,12 +24,12 @@ export default function Quote() {
     const onSubmit = async (e) => {
         console.log(`first`)
         e.preventDefault()
+        setValidation(true)
 
         send("service_hyqo7yi", "template_70pdcqs", toSend, "htePApkmF0hMkDqvD")
         setQuoteSuccess(true).catch((err) => {
             throw err
         })
-        setValidation(true)
     }
 
     const handleChange = (e) => {

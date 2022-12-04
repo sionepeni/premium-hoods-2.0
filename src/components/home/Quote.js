@@ -3,7 +3,7 @@ import { useState, useRef } from "react"
 import { send } from "emailjs-com"
 import { BsChevronDown, BsChevronUp } from "react-icons/bs"
 import { BsXLg } from "react-icons/bs"
-import reCAPTCHA from "react-google-recaptcha"
+import { ReCAPTCHA } from "react-google-recaptcha"
 import axios from "axios"
 
 export default function Quote() {
@@ -173,7 +173,7 @@ export default function Quote() {
                         value={toSend.comment}
                         onChange={handleChange}
                     ></textarea>
-                    <reCAPTCHA
+                    <ReCAPTCHA
                         sitekey={process.env.REACT_APP_SITE_KEY}
                         ref={captchaRef}
                     />

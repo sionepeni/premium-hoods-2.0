@@ -164,7 +164,10 @@ export default function Quote() {
                         onChange={handleChange}
                     ></textarea>
                     <ReCAPTCHA
-                        sitekey={process.env.REACT_APP_SITE_KEY}
+                        sitekey={
+                            process.env.REACT_APP_SITE_KEY ||
+                            "6LchqlMjAAAAAJD9iVvKJkT70a4tflRuugxjYRff"
+                        }
                         ref={captchaRef}
                         onChange={onChange}
                     />

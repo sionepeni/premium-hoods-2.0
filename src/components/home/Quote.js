@@ -1,10 +1,13 @@
 import "../../styles/Quote.css"
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { send } from "emailjs-com"
 import { BsChevronDown, BsChevronUp } from "react-icons/bs"
 import { BsXLg } from "react-icons/bs"
+import ReCAPTCHA from "react-google-recaptcha"
 
 export default function Quote() {
+    const captchaRef = useRef(null)
+    const [validation, setValidation] = useState(true)
     const [showServices, setShowServices] = useState(false)
     const [quoteSuccess, setQuoteSuccess] = useState(false)
     const [selectedServices, setSelectedServices] = useState("Service")
@@ -18,8 +21,10 @@ export default function Quote() {
         service: "",
     })
 
-    const onSubmit = (e) => {
+    const onSubmit = async (e) => {
+        console.log(`first`)
         e.preventDefault()
+
         send("service_hyqo7yi", "template_70pdcqs", toSend, "htePApkmF0hMkDqvD")
         setQuoteSuccess(true).catch((err) => {
             throw err
@@ -32,6 +37,11 @@ export default function Quote() {
 
     const serviceChange = (e) => {
         setToSend({ ...toSend, [e.target.id]: e.target.outerText })
+    }
+
+    function onChange(value) {
+        if (!value) return
+        return setValidation(false)
     }
 
     return (
@@ -153,7 +163,16 @@ export default function Quote() {
                         value={toSend.comment}
                         onChange={handleChange}
                     ></textarea>
-                    <button type="submit" className="quote-submit">
+                    <ReCAPTCHA
+                        sitekey={process.env.REACT_APP_SITE_KEY}
+                        ref={captchaRef}
+                        onChange={onChange}
+                    />
+                    <button
+                        disabled={validation}
+                        type="submit"
+                        className={validation ? "none" : "quote-submit"}
+                    >
                         Submit your Quote
                     </button>
                 </form>

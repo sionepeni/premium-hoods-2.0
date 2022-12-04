@@ -1,4 +1,4 @@
-.quote{
+.quote {
     color: white;
     margin: auto;
     padding: 1rem;
@@ -7,11 +7,11 @@
     width: 70rem;
 }
 
-.quote-h1{
+.quote-h1 {
     text-align: center;
 }
 
-.quote-form{
+.quote-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -19,11 +19,11 @@
     border-radius: 5px;
 }
 
-.general-form{
+.general-form {
     font-size: 20px;
-    padding: .5rem;
+    padding: 0.5rem;
     border: 2px solid black;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     margin: 1rem;
     width: 46.8%;
     border-radius: 5px;
@@ -31,25 +31,25 @@
     background-color: white;
 }
 
-.full-bleed-quote{
+.full-bleed-quote {
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.61);
     clip-path: inset(0 -100vmax);
 }
 
-.general-form::placeholder{
+.general-form::placeholder {
     color: red;
 }
 
-.general-form:focus{
+.general-form:focus {
     border: 1px solid red;
 }
 
-.service{
+.service {
     color: red;
     font-size: 20px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     display: flex;
-    align-items:center;
+    align-items: center;
     justify-content: space-between;
     cursor: pointer;
     position: relative;
@@ -57,9 +57,9 @@
     border-radius: 5px;
 }
 
-.comment{
+.comment {
     font-size: 20px;
-    padding: .5rem;
+    padding: 0.5rem;
     border: 2px solid black;
     margin: 1rem;
     width: 100%;
@@ -69,7 +69,7 @@
     color: red;
 }
 
-.service-list{
+.service-list {
     color: black;
     position: absolute;
     top: 1.5rem;
@@ -81,39 +81,51 @@
     width: 100%;
 }
 
-.quote-li{
+.quote-li {
     list-style: none;
     width: 100%;
     text-align: center;
 }
 
-.quote-li:hover{
+.quote-li:hover {
     background-color: red;
     color: white;
 }
 
-.quote-submit{
-    width:96.8%;
+.quote-submit {
+    width: 96.8%;
     height: 4rem;
     border: 2px solid black;
     border-radius: 5px;
     font-size: 20px;
     color: white;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: "Times New Roman", Times, serif;
     margin-top: 1rem;
     padding: 1rem;
     background-color: rgb(0, 0, 0);
     cursor: pointer;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
+}
+.none {
+    width: 96.8%;
+    height: 4rem;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    color: white;
+    font-family: "Times New Roman", Times, serif;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: grey;
 }
 
-.quote-submit:hover{
+.quote-submit:hover {
     background-color: red;
     font-size: 24px;
-    transition-duration: .5s;
+    transition-duration: 0.5s;
 }
 
-.success-modal{
+.success-modal {
     border: 3px solid red;
     border-radius: 5px;
     width: fit-content;
@@ -127,24 +139,24 @@
     transform: translate(-50%, -50%);
 }
 
-.success-modal-x{
-    padding: .5rem .5rem 0 0;
+.success-modal-x {
+    padding: 0.5rem 0.5rem 0 0;
     display: flex;
     justify-content: flex-end;
 }
 
-.success-modal-text{
+.success-modal-text {
     color: white;
     padding: 0 2rem 2rem 2rem;
     margin: 0;
 }
 
-@media only screen and (max-width : 1024px){
-        .quote{
+@media only screen and (max-width: 1024px) {
+    .quote {
         width: 100vw;
     }
 
-    .quote-form{
+    .quote-form {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -152,48 +164,48 @@
         border-radius: 5px;
     }
 
-    .general-form{
+    .general-form {
         width: 100%;
         font-size: 22px;
     }
 
-    .service{
+    .service {
         font-size: 22px;
     }
 
-    .comment{
+    .comment {
         font-size: 22px;
     }
 
-    .service-list{
-        padding: .5rem 0;
+    .service-list {
+        padding: 0.5rem 0;
     }
 
-    .quote-submit{
-        width:96.5%;
+    .quote-submit {
+        width: 96.5%;
     }
 
-    .success-modal{
+    .success-modal {
         height: fit-content;
         width: 80vw;
     }
 
-    .success-modal-x{
-    padding: 1rem 1rem 0 0;
+    .success-modal-x {
+        padding: 1rem 1rem 0 0;
     }
 
-    .success-modal-text{
+    .success-modal-text {
         line-height: 1.8rem;
         font-size: 26px;
     }
 }
 
-@media only screen and (max-width : 425px){
-    .quote{
+@media only screen and (max-width: 425px) {
+    .quote {
         width: 100vw;
     }
 
-    .quote-form{
+    .quote-form {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -201,90 +213,90 @@
         border-radius: 5px;
     }
 
-    .general-form{
+    .general-form {
         width: 100%;
         font-size: 22px;
     }
 
-    .service{
+    .service {
         font-size: 22px;
     }
 
-    .comment{
+    .comment {
         font-size: 22px;
     }
 
-    .service-list{
-        padding: .5rem 0;
+    .service-list {
+        padding: 0.5rem 0;
     }
 
-    .quote-submit{
-        width:90%;
+    .quote-submit {
+        width: 90%;
     }
 
-    .success-modal{
+    .success-modal {
         height: fit-content;
         width: 80vw;
     }
 
-    .success-modal-x{
-    padding: 1rem 1rem 0 0;
+    .success-modal-x {
+        padding: 1rem 1rem 0 0;
     }
 
-    .success-modal-text{
+    .success-modal-text {
         line-height: 1.8rem;
         font-size: 26px;
     }
 }
 
-@media only screen and (max-width : 412px){
-    .quote{
+@media only screen and (max-width: 412px) {
+    .quote {
         width: 100vw;
     }
 
-    .quote-form{
+    .quote-form {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         padding: 1rem;
         border-radius: 5px;
     }
-    .full-bleed-quote{
+    .full-bleed-quote {
         box-shadow: none;
         clip-path: none;
     }
 
-    .general-form{
+    .general-form {
         width: 100%;
         font-size: 22px;
     }
 
-    .service{
+    .service {
         font-size: 22px;
     }
 
-    .comment{
+    .comment {
         font-size: 22px;
     }
 
-    .service-list{
-        padding: .5rem 0;
+    .service-list {
+        padding: 0.5rem 0;
     }
 
-    .quote-submit{
-        width:90%;
+    .quote-submit {
+        width: 90%;
     }
 
-    .success-modal{
+    .success-modal {
         height: fit-content;
         width: 80vw;
     }
 
-    .success-modal-x{
-    padding: 1rem 1rem 0 0;
+    .success-modal-x {
+        padding: 1rem 1rem 0 0;
     }
 
-    .success-modal-text{
+    .success-modal-text {
         line-height: 1.8rem;
         font-size: 26px;
     }

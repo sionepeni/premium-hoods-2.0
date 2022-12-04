@@ -29,6 +29,7 @@ export default function Quote() {
         setQuoteSuccess(true).catch((err) => {
             throw err
         })
+        setValidation(true)
     }
 
     const handleChange = (e) => {

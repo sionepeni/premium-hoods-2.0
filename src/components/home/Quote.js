@@ -1,10 +1,14 @@
 import "../../styles/Quote.css"
-import { useState } from "react"
+import { useState, useRef } from "react"
 import { send } from "emailjs-com"
 import { BsChevronDown, BsChevronUp } from "react-icons/bs"
 import { BsXLg } from "react-icons/bs"
+import reCAPTCHA from "react-google-recaptcha"
+import axios from "axios"
 
 export default function Quote() {
+    const captchaRef = useRef(null)
+    const [validation, setValidation] = useState(false)
     const [showServices, setShowServices] = useState(false)
     const [quoteSuccess, setQuoteSuccess] = useState(false)
     const [selectedServices, setSelectedServices] = useState("Service")
@@ -18,8 +22,24 @@ export default function Quote() {
         service: "",
     })
 
+    const validateUser = (token) => {
+        axios
+            .post(
+                `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.SECRET_KEY}&response=${token}`
+            )
+            .then((response) => setValidation(response))
+        if (validation.status(200)) {
+            console.log("Human 👨 👩")
+        } else {
+            console.log("Robot 🤖")
+        }
+    }
+
     const onSubmit = (e) => {
         e.preventDefault()
+        const token = captchaRef.current.getValue()
+        validateUser(token)
+        captchaRef.current.reset()
         send("service_hyqo7yi", "template_70pdcqs", toSend, "htePApkmF0hMkDqvD")
         setQuoteSuccess(true).catch((err) => {
             throw err
@@ -153,6 +173,10 @@ export default function Quote() {
                         value={toSend.comment}
                         onChange={handleChange}
                     ></textarea>
+                    <reCAPTCHA
+                        sitekey={process.env.REACT_APP_SITE_KEY}
+                        ref={captchaRef}
+                    />
                     <button type="submit" className="quote-submit">
                         Submit your Quote
                     </button>
